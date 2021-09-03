@@ -13,12 +13,6 @@
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="CSS/normalize.css">
 
-    <!-- Load an icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-
     <!-- Main CSS File -->
     <link rel="stylesheet" href="CSS/master.css">
     
@@ -33,7 +27,7 @@
 <body>
     
     <!-- Start Settings Box -->
-    <div class="settings-box " >
+    <div class="settings-box ">
         <div class="toggle-settings">
             <i class="fa fa-gear"></i>
         </div>
@@ -72,101 +66,95 @@
     </div>
     <!-- End   Settings Box -->
 
+
+
     <!-- Start Nav Bullets -->
     <div class="nav-bullets">
-        <div class="bullet" data-section="#carouselExampleIndicators">
-            <div class="tooltip">الرئسية</div>
+
+        <div class="bullet" data-section=".landing-page">
+            <div class="tooltip">الرئيسية</div>
         </div>
-        <div class="bullet" data-section="#ABOU_DORM">
+        <div class="bullet" data-section=".about-dorm">
             <div class="tooltip">عن السكن</div>
-        </div>
-        <div class="bullet" data-section="#PORTFOLIO">
+        </div>  
+        <div class="bullet" data-section=".portfolio">
             <div class="tooltip">الصور</div>
         </div>
-        <div class="bullet" data-section="#ABOUTUS">
+        <div class="bullet" data-section=".about-us">
             <div class="tooltip">من نحن</div>
         </div>
-        <div class="bullet" data-section="#FEATURES">
-            <div class="tooltip">الخدمات</div>
+        <div class="bullet" data-section=".features">
+            <div class="tooltip">خدماتنا</div>
         </div>
-        <div class="bullet" data-section="#TESTIMONIALS">
-            <div class="tooltip">الاراء</div>
+        <div class="bullet" data-section=".testimonials">
+            <div class="tooltip">ماذا قالو عنا</div>
         </div>
-        <div class="bullet" data-section="#FORM">
-            <div class="tooltip">الحجز</div>
-        </div>
-        <div class="bullet" data-section="#FOOTER">
-            <div class="tooltip">تواصل معنا</div>
-        </div>
-    </div>
-    <!-- End Nav Bullets -->
-
-    <!-- Start Navbar with Icons ----------------------------------------------------------------------------- -->
-    <div class="topnav-container" id="home">
-        <div class="topnav " id="myTopnav" style="z-index:2500">
-            <a class="active" href="#carouselExampleIndicators"><i class="fa fa-fw fa-home"></i>الرئسية</a> 
-            <a href="#ABOU_DORM"><i class="fa fa-fw fa-search"></i> عن السكن</a> 
-            <a href="#PORTFOLIO"><i class="fa fa-fw fa-envelope"></i> الصور</a> 
-            <a href="#ABOUTUS"><i class="fa fa-fw fa-user"></i> من نحن</a>
-            <a href="#FEATURES"><i class="fa fa-fw fa-user"></i>الخدمات</a>
-            <a href="#TESTIMONIALS"><i class="fa fa-fw fa-user"></i>الاراء</a>
-            <a href="#FORM"><i class="fa fa-fw fa-user"></i>الحجز</a>
-            <a href="#FOOTER"><i class="fa fa-fw fa-user"></i>تواصل معنا</a>
-            <a href="pages/summer_club.html"><i class="fa fa-fw fa-user"></i>النادي الصيفي</a>
-
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </div>
-    <!-- End Navbar with Icons ----------------------------------------------------------------------------- -->
-
-    <!-- Start Landing Page -------------------------------------------------------------------------------- -->
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="images/landing-1.jpg" alt="First slide">
-            </div>
-
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/landing-2.jpg" alt="Second slide">
-            </div>
-
-            <div class="carousel-item">
-                <img class="d-block w-100" src="images/landing-3.jpg" alt="Third slide">
-            </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only" style="z-index: 20000;">Next</span>
-        </a>
-
-        <div class="introduction-text">
-            <h1>مرحباً بكم في سكن <span>العلم</span> الطلابي </h1>   
-            <p>سكن <span>العلم</span> ليس مجرد سكن</p>
+        <div class="bullet" data-section=".form">
+            <div class="tooltip">التسجيل</div>
         </div>
         
-    </div> 
-    <!-- End    Landing Page -------------------------------------------------------------------------------- -->
+    </div>
+    <!-- End   Nav Bullets -->
+
+
+
+
+
+    <!-- Start Landing Page -->
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-area">
+                <img src="images/icon2.png" alt="">
+                <div class="links-container">
+                <ul class="links">
+                    <li><a href="#" data-section=".landing-page">الرئيسية</a></li>
+                    <li><a href="#" data-section=".about-dorm">عن السكن</a></li>
+                    <li><a href="#" data-section=".portfolio">الصور</a></li>
+                    <li><a href="#" data-section=".about-us">من نحن</a></li>
+                    <li><a href="#" data-section=".features">خدماتنا</a></li>
+                    <li><a href="#" data-section=".testimonials">ماذا قالو عنا</a></li>
+                    <li><a href="#" data-section=".form">التسجيل</a></li>
+                </ul>
+                <button class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        </div>
+        <div class="introduction-text">
+        <h1>مرحباً بكم في سكن <span>العلم</span> الطلابي </h1>     
+        <p>سكن <span>العلم</span> ليس مجرد سكن</p>
+
+        
+        <div class="but">
+            <div class="center">
+                <button class="btn" >
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border" >
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        <a href="https://www.google.com/">التسجيل</a>
+                        
+                    </svg>
+                    <span>HOVER ME</span>
+                </button>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+    <!-- End Landing Page -->
 
 
 
 
 
     <!-- Start About Dorm --> 
-    <div class="container" id="ABOU_DORM" >
-        <div class="main-heading" style="margin-top: 50px;">
+    <div class="container">
+        <div class="main-heading">
             <h2>نبذة عن السكن</h2>
         </div>
         <div class="about-dorm">
@@ -183,6 +171,8 @@
         </div>
     </div>
     <!-- End About Dorm -->
+
+
 
 
 
@@ -204,8 +194,10 @@
 
 
 
+
+
     <!-- Start Portfolio --------------------------------------------------------------------------------------->
-    <div class="portfolio" id="PORTFOLIO">
+    <div class="portfolio">
         <div class="container">
             <div class="main-heading">
                 <h2>الصور</h2> 
@@ -345,7 +337,7 @@
 
 
     <!-- Start About us --> 
-    <div class="about-us" id="ABOUTUS">
+    <div class="about-us">
         <div class="container">
             <h2>من نحن</h2>
             <div class="aboutus-content">  
@@ -435,13 +427,12 @@
 
 
     <!-- Start Features -->
-    <div class="features" id="FEATURES">
+    <div class="features" >
         <div class="main-heading">
             <h2>خدماتنا</h2> 
             <p>الخدمات اللتي يقدمها سكن العلم</p>
         </div>
         <div class="container" >
-            <div id="service"  class="row" style="background-color: #eee;text-align: center;direction: rtl;">
 
 
             <div class="feat-box">
@@ -504,17 +495,28 @@
                 <p>صاله الالعاب الرياضيه و كمال الاجسام</p>
             </div>
 
+
+
+
+
             <div class="feat-box">
                 <img src="images/services/swimming_pool2.png" alt="">
                 <h4>حوض سباحة</h4>
                 <p>مسبح مجاني مناسب لجميع الفئات العمرية</p>
             </div>
 
+
+
+
+
+            
             <div class="feat-box">
                 <img src="images/services/Playground1.png" alt="">
                 <h4>ملعب</h4>
                 <p>ملعب للعب كرة الطائرة و السلة</p>
             </div>
+
+            
 
             <div class="feat-box">
                 <img src="images/services/studying_room.png" alt="">
@@ -535,7 +537,6 @@
             </div>
             <div class="clearfix"></div>
         </div>
-    </div> 
     </div>
 
     <!-- End Features -->
@@ -545,14 +546,14 @@
 
 
     <!-- Start Testimonials -->
-    <div class="testimonials" id="TESTIMONIALS">
+    <div class="testimonials">
         <div class="container">
             <h2>ماذا قالوا عن</h2>
 
             <div class="ts-box">
                 <p>سكن رائdddع يوفر كافة خدمات الطالب كما انه بيئه مناسبه لطالب في الغربه</p>
                 <div class="person-info">
-                    <img src="images/alnahy.jpg" alt="">
+                    <img src="images/What_they_said _about.jpg" alt="">
                     <h4>د.محمد الناهي</h4>
                     <p>استاذ جامعي ومدرب تنمية بشرية.
                     </p>
@@ -562,8 +563,8 @@
             <div class="ts-box">
                 <p>سكن رائع يوفر كافة خدمات الطالب كما انه بيئه مناسبه لطالب في الغربه</p>
                 <div class="person-info">
-                    <img src="images/khaled.PNG" alt="">
-                    <h4>د.خالد بريه</h4>
+                    <img src="images/What_they_said _about.jpg" alt="">
+                    <h4>د.محمد الناهي</h4>
                     <p>استاذ جامعي ومدرب تنمية بشرية.
                     </p>
                 </div>
@@ -572,7 +573,7 @@
             <div class="ts-box">
                 <p>سكن رائع يوفر كافة خدمات الطالب كما انه بيئه مناسبه لطالب في الغربه</p>
                 <div class="person-info">
-                    <img src="images/landing-1.jpg" alt="">
+                    <img src="images/What_they_said _about.jpg" alt="">
                     <h4>د.محمد الناهي</h4>
                     <p>استاذ جامعي ومدرب تنمية بشرية.
                     </p>
@@ -589,7 +590,7 @@
 
 
     <!-- Start Form  ----------------------------------------------------------------------------------------------------->
-    <div class="form" id="FORM">
+    <div class="form" id="down">
         <div class="container">
             <div class="main-heading">
                 <h2>التسجيل</h2> 
@@ -598,13 +599,15 @@
 
             <div class="button-container">
                 <form action=https://docs.google.com/forms/d/e/1FAIpQLSfgK3pEzdajidAFWcBKpqKAEorDWdHLl4T8E7jbxoc4LSuvVw/viewform>
-                    <!-- <button type="submit" class="button button3" style="display: none;"> Click</button> -->
-                    <button type="submit" class="btn btn-outline-danger">Click</button>
+                    <button type="submit" class="button button3"> Click</button>
                 </form>
             </div> 
+            
+            
+            
 
-            
-            
+
+
         </div>
     </div>
     <!-- End   Form  ----------------------------------------------------------------------------------------------------->
@@ -614,7 +617,7 @@
 
 
     <!-- Start Footer -->
-    <div class="footer" id="FOOTER">
+    <div class="footer">
         <div class="container">
             <img src="images/icon2.png" alt="Logo" />
             <p>تابعونا على مواقع التواصل الإجتماعي</p>
@@ -630,12 +633,6 @@
         </div>
     </div>
     <!-- End Footer -->
-    
-
-    <script src="js/popper.min.js"></script>
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.js"></script>   
     <script src="JS/master.js"></script>
-
 </body>
 </html>
